@@ -1,0 +1,15 @@
+{
+  "name": "my-cool-project",
+  "version": "1.0.0",
+  "description": "WDD330 final project",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Brother Nelson <nelsoned@byui.edu>",
+  "dependencies": {
+    "mapbox-gl": "^3.10.0",
+    "parcel": "^2.8.3",
+    "prettier": "^2.8.4"
+  }
+}
