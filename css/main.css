@@ -86,6 +86,9 @@ button {
   font-size: 16px;
 }
 
+.search-input:hover {
+  background-color: antiquewhite;
+}
 .search-button,
 .locate-button,
 .save-button {

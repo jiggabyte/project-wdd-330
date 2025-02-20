@@ -1,10 +1,10 @@
 import { createElement } from './utils';
 import mapboxgl from 'mapbox-gl'; // Import mapbox-gl
-import dotenv from 'dotenv';
+// import dotenv from 'dotenv';
 import { join } from 'path';
 
 // Load environment variables from .env file
-dotenv.config();
+// dotenv.config();
 
 // Access environment variables
 //const API_KEY = process.env.API_KEY;
@@ -164,6 +164,10 @@ export default async function LocationFinder() {
       }
     });
 
+    searchInput.addEventListener('focus', () => {
+      document.querySelector(".search-button").textContent = "Search City";
+    });
+
     
   // Save Location to Local Storage
   saveButton.addEventListener('click', () => {
@@ -178,7 +182,7 @@ export default async function LocationFinder() {
         const locations = JSON.parse(localStorage.getItem('locations')) || [];
         locations.push({ latitude, longitude });
         localStorage.setItem('locations', JSON.stringify(locations));
-        alert('Location saved!');
+        alert('Location saved!', JSON.stringify(locations));
       },
       (error) => {
         alert('Unable to retrieve your location.');
