@@ -73,3 +73,45 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
+
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+}
+
+.search-input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.search-button,
+.locate-button,
+.save-button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+  }
+  
+  .search-input {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .search-button,
+  .locate-button,
+  .save-button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}

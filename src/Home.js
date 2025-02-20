@@ -1,8 +1,8 @@
 import { createElement } from './utils';
 import LocationFinder from './LocationFinder';
 
-function Page1() {
-  const title = createElement('h2', { textContent: 'Page 1' });
+function Home() {
+  const title = createElement('h2', { textContent: 'Home' });
 
   const page3Link = createElement('a', {
     href: '/#/page3',
@@ -12,4 +12,4 @@ function Page1() {
   return createElement('div', {}, []);
 }
 
-export default Page1;
+export default Home;

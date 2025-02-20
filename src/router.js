@@ -1,6 +1,6 @@
 import { createElement } from './utils';
 
-import Page1 from './Page1';
+import Home from './Home';
 import Counter from './Counter';
 import Page3 from './Page3';
 
@@ -12,8 +12,8 @@ export function initRouter(mainView) {
 
   function hashToRoute(hash) {
     switch (hash) {
-      case '#/page1':
-        updateView(Page1());
+      case '#/home':
+        updateView(Home());
         break;
 
       case '#/page2':
@@ -30,7 +30,7 @@ export function initRouter(mainView) {
     }
   }
 
-  const defaultHash = window.location.hash || '#/page1';
+  const defaultHash = window.location.hash || '#/home';
   hashToRoute(defaultHash);
 
   window.addEventListener('hashchange', (evt) => {

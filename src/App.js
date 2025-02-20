@@ -10,7 +10,7 @@ function Header(mainDiv) {
 
   // nav items
   const page1 = createElement('a', {
-    href: '/#/page1',
+    href: '/#/home',
     textContent: 'Home',
   });
   const page2 = createElement('a', {
@@ -25,8 +25,6 @@ function Header(mainDiv) {
   // const nav = createElement('nav', {}, [page1, page2, page3]);
 
   const headerElem = createElement('header', {}, [appTitle]);
-  headerElem.style.display = 'flex';
-  headerElem.style.justifyContent = 'center';
 
   document.getElementById('header').innerHTML = headerElem.innerHTML;
 }
